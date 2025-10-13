@@ -1,0 +1,49 @@
+input, select, textarea {
+  display: block;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Focus state */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: blue;
+  outline: none;
+}
+
+/* Validation states */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* First input (Full Name) */
+input:first-of-type {
+  border-radius: 20px;
+}
+
+/* Button hover */
+button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+/* Radio group checked styles */
+.radio-group input[type="radio"]:checked + label {
+  color: blue;
+  border: 2px solid blue;
+  background-color: #e0f0ff;
+  box-shadow: 0 0 5px blue;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
