@@ -6,15 +6,47 @@
 }
 
 body{
-    /*background-color: aqua;*/
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:  #ffffff;
+    font-family: Garamond, sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 
 a{
-    color:coral;
+    color:#3d6ab3;
+    text-decoration: none;
 }
 
 #flexZScrn {
     height:50vw;
     width:80vw;
+    display: block;
+    margin: 0 auto;
 }
+
+.prjctSS {
+    width:200px;
+    height: 180px;
+    filter:brightness(90%);
+}
+
+img {
+    border-radius: 10%;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding:10px;
+    background-color:#cddcf1;
+    border-radius: 10%;
+}
+
+.welcome {
+    background-color:#cddcf1;
+    margin: auto 50px auto 50px;
+    border-radius: 10%;
+}
+
