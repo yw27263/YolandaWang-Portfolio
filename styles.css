@@ -6,14 +6,15 @@
 }
 
 body{
-    background-color:  #ffffff;
     font-family: Garamond, sans-serif;
     font-weight: bold;
     text-align: center;
+    animation: colorChange 1s steps(2) infinite;
 }
 
+
 a{
-    color:#3d6ab3;
+    color:#ffffff;
     text-decoration: none;
 }
 
@@ -25,9 +26,10 @@ a{
 }
 
 .prjctSS {
-    width:200px;
-    height: 180px;
+    width:250px;
+    height: 230px;
     filter:brightness(90%);
+    animation: pulse 1s infinite;
 }
 
 img {
@@ -42,11 +44,52 @@ img {
     padding:10px;
     background-color:#cddcf1;
     border-radius: 10%;
+    animation: colorChange 2s steps(2) infinite;
 }
 
 .welcome {
-    background-color:#cddcf1;
     margin: auto 50px auto 50px;
     border-radius: 10%;
+    animation: colorChange 3s steps(2) infinite;
 }
 
+.rotatingTxt {
+    display: inline-block;
+    animation: spin 2s linear infinite;
+}
+
+p1{
+    color: white;
+}
+
+/*Toggle Spin*/
+#toggle-spin:checked ~ .rotatingTxt {
+  animation-play-state: paused;
+}
+
+.profiles {
+    font-size: 18px;
+}
+
+#prjct-landing{
+    font-size: 50px;
+}
+
+/*animations*/
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+@keyframes colorChange {
+    0%   { background-color: red; } 
+    25%  { background-color: yellow; }
+    50%  { background-color: green; }
+    75%  { background-color: blue; }
+}
+
+@keyframes pulse {
+    0% {filter:brightness(20%)}
+    50% {filter:brightness(100%)}
+}
