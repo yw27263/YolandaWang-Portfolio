@@ -1,0 +1,129 @@
+body {
+    background-image:url(anonymousFish.jpg);
+    background-size:cover;
+    background-position: 30% 30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#desc {
+    text-align: center;
+    color:white;
+    margin-top:0;
+}
+
+.info-div{
+    margin-top:40vh;
+    margin-bottom:0;
+    background-color:black;
+    color:white;
+    padding: 20px;
+    border-radius:20px;
+}
+
+.timeline {
+  background: #000;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+.timeline-item {
+  border-left: 3px solid #0ff; 
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.bouncing-fish {
+  position: absolute;
+  width: 150px;
+  animation: bounce 6s infinite linear alternate, spin 5s infinite linear;
+}
+
+@keyframes bounce {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: calc(100% - 120px);
+  }
+  50% {
+    top: calc(100% - 120px);
+    left: calc(100% - 120px);
+  }
+  75% {
+    top: calc(100% - 120px);
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+h1 {
+    text-align: center;
+    color:white;
+    margin-bottom:0;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+p {
+    font-size:13px;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 90px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size:35px;
+    }
+    p {
+        font-size:30px;
+    }
+    .bouncing-fish{
+        width:250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 150px;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    p{
+        font-size:30px;
+    }
+    .bouncing-fish{
+        width:300px;
+    }
+}

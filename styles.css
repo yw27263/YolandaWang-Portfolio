@@ -75,6 +75,11 @@ p1{
     font-size: 50px;
 }
 
+#tribute-img{
+    width:70vw;
+    animation: spin 4s infinite linear;
+}
+
 /*animations*/
 
 @keyframes spin {
