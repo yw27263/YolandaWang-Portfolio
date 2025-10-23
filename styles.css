@@ -63,7 +63,7 @@ p1{
 }
 
 /*Toggle Spin*/
-#toggle-spin:checked ~ .rotatingTxt {
+#toggle-spin:checked ~ div .rotatingTxt {
   animation-play-state: paused;
 }
 
