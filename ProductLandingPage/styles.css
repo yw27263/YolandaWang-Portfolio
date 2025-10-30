@@ -1,17 +1,55 @@
 body {
-    background-color: rgb(22, 22, 22);
-    font-family: 'impact', 'sans-serif';
-    letter-spacing: 0.5px;
+  background-color: rgb(22, 22, 22);
+  font-family: 'impact', 'sans-serif';
+  letter-spacing: 0.5px;
+  background-image:url(bgAgents.png);
+  background-size:contain;
+  background-position: 30% 30%;
+  background-repeat:repeat;
+  background-attachment: fixed;
+  margin:0;
+}
+
+.welcome {
+  color:white;
+  text-align:center;
+  background-color: black;
+  padding: 1px;
 }
 
 h1{
-    color:white;
-    text-align: center;
-    font-size: 30px;
+  font-size: 30px;
 }
 
 figcaption {
-    font-size: 10px;
+  font-size: 10px;
+}
+
+button {
+  background-color: #ff4040;
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 300;
+  border: 2px solid white;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display:block;
+  margin: auto;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.03);
+}
+
+.info {
+  margin-top:10vh;
+  background-color: white;
+  color: black;
+  padding: 5px;
 }
 
 /*media query*/
@@ -110,9 +148,13 @@ ol, li {
 
 .carousel {
   position: relative;
-  padding-top: 75%;
-  filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px;
+  width: 60vw;      
+  height: 75vh;      
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden; 
+  color:white;
+  text-align: center;
 }
 
 .carousel__viewport {
@@ -125,13 +167,14 @@ ol, li {
   overflow-x: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  background: rgb(37, 46, 58);
 }
 
 .carousel__slide {
   position: relative;
   flex: 0 0 100%;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   background: none;
 }
 
@@ -140,10 +183,12 @@ ol, li {
 }
 
 .carousel__slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  display:block;
+  margin: 0 auto;
+  width: 80%;
+  height: 85%;
+  object-fit:contain;
+  border-radius: 15px;
 }
 
 .carousel__snapper {
@@ -155,18 +200,6 @@ ol, li {
   scroll-snap-align: center;
 }
 
-@media (hover: hover) {
-  .carousel__snapper {
-    animation-name: tonext, snap;
-    animation-timing-function: ease;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-  }
-
-  .carousel__slide:last-child .carousel__snapper {
-    animation-name: tostart, snap;
-  }
-}
 
 @media (prefers-reduced-motion: reduce) {
   .carousel__snapper {
@@ -196,7 +229,7 @@ ol, li {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
-  background-color: #333;
+  background-color: #000000;
   background-clip: content-box;
   border: 0.25rem solid transparent;
   border-radius: 50%;
@@ -233,11 +266,10 @@ ol, li {
 .carousel::after {
   content: '';
   z-index: 1;
-  background-color: #333;
+  background-color: #000000;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center center;
-  color: #fff;
   font-size: 2.5rem;
   line-height: 4rem;
   text-align: center;
@@ -253,15 +285,15 @@ ol, li {
 }
 
 .carousel__slide figcaption {
-  position: absolute;
+  position: relative;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  bottom: 10px;
+  bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
   background: none;
   color: white;
-  font-size: 1.2rem;
-  padding: 0.5rem 0;
+  font-size: 5.2rem;
+  padding: 0;
   border-radius: 0 0 10px 10px;
 }
