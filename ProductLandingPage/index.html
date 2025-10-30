@@ -16,7 +16,7 @@
                <div class="carousel__snapper">
                   <img src="memes/sage.png" alt="Sage">
                   <figcaption>Sage</figcaption>
-                  <a href="#carousel__slide9" class="carousel__prev">Go to last slide</a>
+                  <a href="#carousel__slide11" class="carousel__prev">Go to last slide</a>
                   <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
                </div>
             </li>
@@ -81,6 +81,30 @@
                   <img src="memes/killjoy.png" alt="widejoy">
                   <figcaption>Widejoy</figcaption>
                   <a href="#carousel__slide8" class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide10" class="carousel__next">Go to first slide</a>
+               </div>
+            </li>
+            <li id="carousel__slide10" tabindex="0" class="carousel__slide">
+               <div class="carousel__snapper">
+                  <img src="memes/neon.png" alt="sonic the hedgehog">
+                  <figcaption>Sonic the Neon</figcaption>
+                  <a href="#carousel__slide9" class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide11" class="carousel__next">Go to first slide</a>
+               </div>
+            </li>
+            <li id="carousel__slide11" tabindex="0" class="carousel__slide">
+               <div class="carousel__snapper">
+                  <img src="memes/kayo.png" alt="kayo">
+                  <figcaption>Kay/o</figcaption>
+                  <a href="#carousel__slide10" class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide12" class="carousel__next">Go to first slide</a>
+               </div>
+            </li>
+            <li id="carousel__slide12" tabindex="0" class="carousel__slide">
+               <div class="carousel__snapper">
+                  <img src="memes/sova.png" alt="sova">
+                  <figcaption>Sova</figcaption>
+                  <a href="#carousel__slide11" class="carousel__prev">Go to previous slide</a>
                   <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
                </div>
             </li>
@@ -121,15 +145,80 @@
                </li>
                <li class="carousel__navigation-item">
                   <a href="#carousel__slide9"
-                     class="carousel__navigation-button">Go to slide 8</a>
+                     class="carousel__navigation-button">Go to slide 9</a>
+               </li>
+               <li class="carousel__navigation-item">
+                  <a href="#carousel__slide10"
+                     class="carousel__navigation-button">Go to slide 10</a>
+               </li>
+               <li class="carousel__navigation-item">
+                  <a href="#carousel__slide11"
+                     class="carousel__navigation-button">Go to slide 11</a>
+               </li>
+               <li class="carousel__navigation-item">
+                  <a href="#carousel__slide12"
+                     class="carousel__navigation-button">Go to slide 12</a>
                </li>
             </ol>
          </aside>
       </section>
-      <button>SPONSOR TODAY!</button>
-      <div class="info">
-         <h1>ABOUT</h1>
-         <h3>LALALALAL</h3>
+      <a href="#popup" class="btn">SPONSOR TODAY!</a>
+      <div id="popup" class="popup">
+         <div class="popup-content">
+            <h2>Become a Sponsor!</h2>
+            <p>Enter your credit card number:</p>
+            <input type="text" placeholder="xxxx xxxx xxxx xxxx">
+            <a href="#" class="close">Close</a>
+         </div>
+      </div>
+      <section id="about" class="about-section">
+         <h2>ABOUT</h2>
+         <p class="tagline">Need a life purpose? We've got your back.</p>
+         <p class="description">
+            When you sponsor a VALORANT Agent, you’re not just supporting my wallet—you’re fueling their endless queue dodges,
+            snack habits, and questionable ult decisions. Join the cause. Sponsor today and make your wallet mine.
+         </p>
+         <div class="features">
+            <div class="feature-card">
+               <h3>🧠 Behind the Scenes</h3>
+               <p>Access top-secret Agent “training” footage—mostly dance routines and questionable plays.</p>
+            </div>
+            <div class="feature-card">
+               <h3>💸 Custom Shoutouts</h3>
+               <p>Receive personalized in-game appreciation (results may vary depending on rank).</p>
+            </div>
+            <div class="feature-card">
+               <h3>🎁 Imaginary Rewards</h3>
+               <p>Unlock early access to skins that totally exist somewhere in another universe.</p>
+            </div>
+            <div class="feature-card">
+               <h3>🌐 Join the Movement</h3>
+               <p>Be one of thousands supporting the next clutch—statistically speaking, it could happen.</p>
+            </div>
+         </div>
+         <div class="testimonials">
+            <h2>WHAT OUR SPONSORS SAY</h2>
+            <div class="testimonial-card">
+               <p>"My life changed after sponsoring Sage. I now revive my friends emotionally."</p>
+               <span>- SadReyna</span>
+            </div>
+            <div class="testimonial-card">
+               <p>"10/10 would sponsor again, though my wallet didn’t survive."</p>
+               <span>- PhoenixEnjoyer</span>
+            </div>
+            <div class="testimonial-card">
+               <p>"Sponsoring Omen seemed cool until I realized he keeps whispering from my fridge at 3 AM."</p>
+               <span>- SlightlyTerrifiedViperMain</span>
+            </div>
+            <div class="testimonial-card">
+               <p>"I thought sponsoring Killjoy would be fun, but now my toaster has Wi-Fi and won’t stop updating."</p>
+               <span>- Cypher’sCamera</span>
+            </div>
+         </div>
+      </section>
+      <div class="sponsored">
+         <p>Sponsored by RITO GAMES</p>
+         <img id="logo" src="riot-games.png" alt="riot games logo">
       </div>
    </body>
 </html>

@@ -68,8 +68,28 @@ img {
     font-size: 18px;
 }
 
-#prjct-landing{
-    font-size: 50px;
+.btn {
+  background-color: #ff4040;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align:center;
+  text-decoration:none;
+  border: 2px solid white;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display:block;
+  margin: auto;
+  width:30vw;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.03);
 }
 
 #tribute-img{
